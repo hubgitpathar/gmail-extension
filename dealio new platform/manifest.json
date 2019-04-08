@@ -1,0 +1,33 @@
+{
+    "name": "Example Gmail Extension",
+    "description": "Example extension showing use of the Streak Gmail SDK",
+    "version": "0.1",
+    "content_scripts": [
+      {
+        "matches": [
+          "https://mail.google.com/*",
+          "https://inbox.google.com/*",
+          "http://localhost:4200/*"
+        ],
+        "js": ["inboxsdk.js","content.js"],
+        "run_at": "document_end"
+        
+      }
+    ],
+    "content_security_policy": "script-src 'self'  'unsafe-eval'; object-src 'self'",
+    "background":{
+      "scripts":["background.js"]
+    },
+    "browser_action": {
+      "default_icon": "icon.png"
+      
+  },
+    "permissions": [
+      "https://mail.google.com/",
+      "https://inbox.google.com/",
+      "http://localhost:4200/",
+      "tabs"
+    ],
+    "manifest_version": 2
+  }
+  
