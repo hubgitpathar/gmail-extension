@@ -15,4 +15,7 @@ i am sure that you have alraedy unzipped the dealio new platform App
 8.when you click this button an html template will be embedded into the message body.
 thats it....
 
+see the video detailed behaviour 
+https://youtu.be/vxvQPHFJDRo
+
 thanks
